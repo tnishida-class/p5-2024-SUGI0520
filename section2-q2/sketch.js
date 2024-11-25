@@ -2,7 +2,7 @@
 function setup() {
 
   createCanvas(400, 400);
-  let size = width / 8; 
+  let size = width / 8; //幅
   let r = 40; //半径
   background(255);
   noStroke();
@@ -22,7 +22,7 @@ function setup() {
       if(((i + j)% 2 === 1) && (j > 4))//下の方は黒丸
       {
         fill(0);
-        ellipse(x + size/2, y + size/2, r, r);
+        ellipse(x + size/2, y + size/2, r);
       }
     }
   }
