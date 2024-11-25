@@ -46,9 +46,9 @@ function draw() {
 
   const dx2 = mouseX - pmouseX;
   const dy2 = mouseY - pmouseY;
-  //速度が速いのでdx2,dy2を半分に
+  //速度が速いのでdx2,dy2を4分の１に
   if (mag(dx2, dy2) > 5 && circle.r > 5) {
-    const b = { x: mouseX, y: mouseY, size: random(1, 20), vx: -dx/2, vy: -dy/2 };
+    const b = { x: mouseX, y: mouseY, size: random(1, 20), vx: -dx/4, vy: -dy/4 };
     balls.push(b);
   }
 }
